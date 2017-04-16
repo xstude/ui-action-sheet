@@ -1,0 +1,18 @@
+{
+  "name": "action-sheet",
+  "version": "1.0.0",
+  "description": "simple and pure javascript action-sheet component",
+  "main": "ui-action-sheet.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:focus-fe/ui-action-sheet.git"
+  },
+  "keywords": [
+    "action-sheet"
+  ],
+  "author": "ldllidonglin",
+  "license": "ISC",
+   "bugs": {
+    "url": "https://github.com/focus-fe/ui-action-sheet/issues"
+  }
+}

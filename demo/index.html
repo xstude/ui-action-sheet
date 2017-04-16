@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>actionSheet演示</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="demo">
+    <style>
+        html,body {
+            font-family: '黑体-简', Helvetica, sans-serif;
+        }
+        button {
+            width: 100px;
+            height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <button onclick="show()">出来</button>
+    <button onclick="show2()">出来-定义标题</button>
+    <button onclick="show3()">出来-高阶用法</button>
+    <script src="../src/index.js"></script>
+    <script>
+        function show (){
+            ActionSheet.show(function(v){
+                alert(v)
+            })
+        }
+        function show2 (){
+            ActionSheet.show("冬琳哥", function(v){
+                alert(v)
+            })
+        }
+        function show3 (){
+            ActionSheet.show({
+                title: "帅气？",
+                labels: ['1分','2分','-1分','-2分','0分'],
+                fn: function () {
+                    alert(1)
+                }
+            })
+        }
+    </script>
+</body>
+</html>
